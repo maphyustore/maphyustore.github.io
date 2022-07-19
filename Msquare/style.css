@@ -1,0 +1,101 @@
+.logo{
+    width:30px;
+    height:30px;
+    margin-right: 330px;
+
+}
+
+.left{
+    display:inline-block;
+    width:40%;
+}
+.inner{
+}
+.right{
+    display:inline;
+}
+.ios{
+    width:120px;
+    height:60px;
+}
+.android{
+    width:120px;
+    height:45px;
+}
+.phone{
+    width:40%;
+    margin-left: 150px;
+   
+}
+.room{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 15px;
+    font-size: 16px;
+
+}
+.room:hover{
+    border-bottom-style:solid ;
+    border-bottom-color: #A033FF;
+}
+
+.box{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color:lightgray;
+    height: 35px;
+    width: 250px;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:15px;
+}
+.login{
+    background-color: #0a7cff;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    padding: 2px 20px 0;
+    font-size: 19px;
+    height: 40px;
+    width:100px ;
+}
+.all{
+    margin-left: 250px;
+    margin-right: 200px;
+    
+}
+.menu{
+    margin-bottom: 100px;
+}
+.header{
+    margin-bottom:20px ;
+    font-size: 70px;
+    color:rgb(121, 56, 224) ;
+    font-family:Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+.mid{
+    margin-bottom:20px;
+    
+}
+.checkbox{
+    margin-bottom: 20px;
+}
+.password{
+    margin-bottom: 20px;
+}
+/* .password:hover{
+    border-bottom-style: solid;
+    border-bottom-color: #A033FF ;
+} */
+.bottom{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 200px;
+    color: rgb(121, 56, 224);
+    font-family:Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-weight:500;
+}
