@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <form name="myform">
+        <label  for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <br><br>
+        <label for="html">Html</label>
+        <input type="number" name="html" id="html" placeholder="Enter Html mark">
+        <br><br>
+        <label for="css" >Css</label> 
+        <input type="number" name="css" id="css" placeholder="Enter css mark">
+        <br><br>
+        <label for="js">JavaScript</label>
+        <input type="number" name="js" id="js" placeholder="Enter javaScript mark"> 
+        <br><br>
+        <button type="button" onclick="result()">Result</button>
+
+
+    </form>
+
+    <script>
+        function result(){
+            let name = document.myform.name.value;
+            console.log(name);
+            let html = document.myform.html.value;
+            console.log(html);
+            let css = document.myform.css.value;
+            console.log(css);
+            let js = document.myform.js.value;
+            console.log(js);
+
+            if (html <50 || css <50 || js <50 ){
+               document.write('<h1>'+name+' is fail!<h1/>')
+            }else if (html > 80 && css < 81 && js < 81 ) {
+                document.write('<h1>'+name+' got distinction at html!<h1/>')
+            }else if (html < 81 && css > 80 && js < 81 ) {
+                document.write('<h1>'+name+' got distinction at css!<h1/>')
+            }else if (html < 81 && css < 81 && js > 80 ) {
+                document.write('<h1>'+name+' got distinction at javaScript!<h1/>')
+            }else if (html >= 81 && css >= 81 && js >= 81 ) {
+                document.write('<h1>'+name+' got distinction at all!<h1/>')
+            }else if (html >=81 && css >=81 && js <81 ) {
+                document.write('<h1>'+name+' got distinction at html and css<h1/>')
+            }else if (html >=81 && css < 81 && js >= 81) {
+                document.write('<h1>'+name+' got distinction at html and javaScript<h1/>')
+            }else if (html < 81 && css >= 81 && js >= 81) {
+                document.write('<h1>'+name+' got distinction at css and javaScript<h1/>')
+            }else {
+                document.write('<h1>'+name+' is pass!<h1/>')
+            }
+            
+        }
+    </script>
+</body>
+</html>
