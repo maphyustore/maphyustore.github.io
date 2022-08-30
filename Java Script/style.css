@@ -1,0 +1,16 @@
+.body{
+    background-color: black;
+    font-family:'Poppins', sans-serif;;
+}
+.form{
+    width: 500px;
+
+}
+
+.list-group-item{
+    
+}
+.line{
+    text-decoration: line-through;
+    cursor: pointer;
+}

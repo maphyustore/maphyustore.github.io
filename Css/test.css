@@ -1,0 +1,60 @@
+/* h3{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+small{
+    color: yellow;
+    font-size: 20px;
+} */
+
+
+
+a[title="google"]{
+    color:yellow;
+}
+#idSelector{
+    color: green;
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+.classselector{
+    color: red;
+    word-spacing: 40px;
+    line-height: 40px;
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+/* .desc a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.child>a{
+    color: rgb(130, 238, 6);
+    text-decoration: none;
+} */
+
+a:link{
+    color:greenyellow;
+}
+a:hover{
+    color: crimson;
+    letter-spacing: 20px;
+}
+a:active{
+    color: darkorchid;
+}
+a:visited{
+    color: rgb(247, 95, 8);
+}
+div:target{
+    color: red;
+}
+p:target{
+    color: chartreuse;
+    word-spacing: 20px;
+}

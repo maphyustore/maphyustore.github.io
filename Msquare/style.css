@@ -1,18 +1,29 @@
+.html,body{
+    margin: 0;
+    padding: 0;
+}
 .logo{
-    width:30px;
-    height:30px;
-    margin-right: 330px;
+   width: 100%;
+   height: 100%;
 
+}
+
+.logocontainer{
+    width: 40px;
+    height: 40px;
 }
 
 .left{
     display:inline-block;
-    width:40%;
+    width:50%;
 }
 .inner{
+   
 }
 .right{
     display:inline;
+    width: 50%;
+
 }
 .ios{
     width:120px;
@@ -23,7 +34,7 @@
     height:45px;
 }
 .phone{
-    width:40%;
+    width:80%;
     margin-left: 150px;
    
 }
@@ -44,7 +55,7 @@
     margin-top: 10px;
     margin-bottom: 20px;
     border: none;
-    background-color:lightgray;
+    background-color:#F5F5F5;
     height: 35px;
     width: 250px;
     border-radius: 15px;
@@ -64,12 +75,25 @@
     width:100px ;
 }
 .all{
-    margin-left: 250px;
-    margin-right: 200px;
-    
+    max-width: 850px;
+    margin: 0 auto;
+
 }
 .menu{
-    margin-bottom: 100px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px lightgrey solid;
+    background-color: #F5F5F5;
+    opacity: 0.9;
+}
+
+.options{
+  
+
 }
 .header{
     margin-bottom:20px ;
@@ -98,4 +122,43 @@
     color: rgb(121, 56, 224);
     font-family:Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;
     font-weight:500;
+    background-color:#F5F5F5;
+   
+    padding: 20px 20px;
+}
+.bar{
+    width: 25px;
+    height: 20px;
+}
+.menubar{
+    display: none;
+}
+@media (max-width:767px)  {
+    .options {
+        display: none;
+    }
+.menubar{
+    display: block;
+}
+.left{
+    width: 100%; 
+}
+.inner{
+    width: 75%;
+    margin: 0 auto;
+}
+.right{
+    width: 100%;
+    overflow: scroll;
+    margin-right:-20;
+    text-align: center;
+
+}
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu{
+    
 }

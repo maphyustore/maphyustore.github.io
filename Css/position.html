@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .relative_parents,
+        .absolute_parent{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        .relative{
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+        .absolute{
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+            position: absolute;
+            top: 50px;
+            right: 400px;
+        }
+        .fix{
+            position: fixed;
+            top: 100px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position Lessons</h1>
+
+    <div class="relative_parents">
+        <p class="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat placeat doloremque, dicta asperiores laudantium architecto dolor ex corporis autem suscipit iusto ullam dolorem fugit laboriosam natus atque excepturi beatae error?
+        </p>
+    </div>
+
+    <div class="absolute_parent">
+        <p class="absolute">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita eveniet vitae. Esse, voluptatibus! Perferendis ab excepturi adipisci enim recusandae inventore. Culpa libero dolore animi et aut similique, sit quisquam?</p>
+    </div>
+
+    <h2 class="fix">Position Fixed</h2>
+</body>
+</html>

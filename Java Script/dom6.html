@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h3 align="center">Switch the mode,feel the change! </h3>
+    <button onclick="dark()" id="dark_mode ">Dark Mode</button>
+    <button onclick="light()" id="light_mode ">Light Mode</button>
+    <button onclick="eco()" id="eco_mode">Eco Mode</button>
+    <button onclick="nature()" id="natue_mode">Nature Mode</button>
+
+    <script>
+        
+        function dark(){
+            let body = document.querySelector('#body')
+            let attr = body.getAttribute('style');
+            if (attr){
+                body.removeAttribute('style')
+            }else body.getAttribute = ('style','color:red;')
+        }
+    </script>
+</body>
+</html>

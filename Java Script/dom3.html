@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Kaung Htet Paing</h1>
+    <button onclick="action()">Action</button><br><br>
+    <img src="img.jpeg" id="image" width="300px" height="200px">
+    <br>
+    <img src="img1.jpeg" id="image1" width="300px" height="200px" onmouseover="big()" onmouseout="small()">
+
+    <script>
+        function action(){
+            let heading = document.querySelector('#heading');
+            heading.style.color='red'
+            heading.style.backgroundColor = 'black';
+
+            let img = document.querySelector('#image');
+            img.style.width= '400px';
+            img.style.height= '300px';
+        }
+
+        let image1 = document.querySelector('#image1');
+
+        function big(){
+            image1.style.width = '400px';
+            image1.style.height = '300px';
+        }
+        function small(){
+            image1.style.width = '300px';
+            image1.style.height = '200px'
+        }
+
+
+    </script>
+</body>
+</html>

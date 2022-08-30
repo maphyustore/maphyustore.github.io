@@ -1,0 +1,14 @@
+h1{
+    color: aqua;
+    text-align: center;
+}
+.margin{
+    margin: 100px 200px;
+}
+.margin1{
+    margin-left: 50px;
+}
+.padding{
+    padding: 100px;
+    border: 1px solid yellow;
+}

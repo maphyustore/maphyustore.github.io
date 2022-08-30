@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            border-color: blueviolet;
+        }
+        p{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <label for="num1">Number1</label>
+    <input type="number" for="num1" id="num1">
+    <p id="num1_error"></p>
+    <br><br>
+    <label for="num1">Number2</label>
+    <input type="number" for="num2" id="num2">
+    <p id="num2_error"></p>
+    <br><br>
+    <label for="result">Result</label> 
+    <input type="number" for="result" id="result">
+    <br><br>
+    <button type="button" onclick="add()">Add</button>
+
+
+    <script>
+        function formError(){
+            let num1 = document.querySelector('#num1');
+            let num2 = document.querySelector('#num2');
+
+            let num1_error = document.querySelector('#num1_error');
+            let num2_error = document.querySelector('#num2_error');
+
+            let number1 = num1.value;
+            let number2 = num2.value;
+
+            if(number1 === '' || number2 === ''){
+                num1_error.innerHTML = '';
+                num2_error.innerHTML = '';
+                num1.removeAttribute('class');
+                num2.removeAttribute('class');
+
+                if(number1 === ''){
+                    error(num1_error,num1,'Number one is Required');
+                }
+                if(number2 === ''){
+                    error(num2_error,num2,'Number two is Required');
+                }
+
+                function error(numError,numInput,message){
+                    numError.innerHTML = message;
+                    numInput.setAttribute('class','error');
+                }
+            }else{
+                num1_error.innerHTML = '';
+                num2_error.innerHTML = '';
+                num1.removeAttribute('class');
+                num2.removeAttribute('class');
+            }
+
+            return {number1,number2}
+        }
+
+        function add() {
+            let numbers = formError();
+            let result = parseInt(numbers.number1) + parseInt(numbers.number2);
+            document.querySelector('#result').value = result;
+        }
+    </script>
+</body>
+</html>

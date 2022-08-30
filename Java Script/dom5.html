@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h3 id="heading">Kaung Htet Paing</h3>
+    <button onclick="add()">Add</button>
+
+    <button onclick="action()">action</button>
+
+    <input type="text" for="name" id="name">
+    <button onclick="now()" id="button">Now</button>
+    <ol id="list">
+        <li>Kaung Htet Paing</li>
+    </ol>
+
+
+    <script>
+        function add (){
+            let heading = document.querySelector('#heading');
+           
+            let attr = heading.getAttribute('style');
+            if (attr){
+                heading.removeAttribute('style');
+                heading.innerHTML = "Kaung Htet Paing"
+            }else{
+                heading.innerHTML = "May Moe Sat"
+                heading.style.color = "red";
+            }
+             
+        }
+
+        function action(){
+            
+            let h1 = document.createElement('h1');
+            h1.innerHTML = 'Hello';
+            document.body.appendChild(h1);
+        }
+
+        function now(){
+            let name = document.querySelector('#name').value;
+            let li = document.createElement('li');
+            li.innerHTML = name;
+            let ulist = document.querySelector('#list');
+            ulist.appendChild(li)
+            
+        }
+        
+
+
+    </script>
+
+</body>
+</html>

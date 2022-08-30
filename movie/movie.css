@@ -1,0 +1,247 @@
+/* .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+/* *{
+    background-color: black;
+} */
+#menu{
+    position: absolute;
+    top: 60px;
+    
+}
+#nav_button{
+    color:rgb(224, 11, 11);
+    border: 1px solid rgb(224, 11, 11);
+    background-color: black;
+}
+#most{
+    text-align: right;
+}
+#menus{
+    padding-top: 70px;
+}
+/* #menus h1{
+    animation: moveleft 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+} */
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+#menus p{
+    animation: moveright 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+#animate2 h1{
+    text-transform: uppercase;
+    
+}
+.image{
+    width: 100%;
+}
+.navBarContainer{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+#aTag:hover{
+    text-decoration: underline;
+
+}
+#aTag{
+    color: rgb(224, 11, 11);
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#bar p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+#nav_bar{
+    background-color: black;
+    opacity: 0.9;
+}
+.input-group{
+    width: 70%;
+    margin: auto;
+}
+#footer{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.iTag1{
+    font-size: 27px;
+    color: rgb(230, 2, 2);
+}
+#button1{
+    border: 1px solid rgb(230, 2, 2);
+    color: white;
+    background-color: rgb(230, 2, 2);
+    
+}
+#comment{
+    padding: 50px 100px;
+    background-color: black;
+}
+#animate1{
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    text-shadow: 2px 3px 4px rgb(177, 147, 147);
+}
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+#animate1 span{
+
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+#animate1 span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#animate1 span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+#animate1 span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+.mainContainer{
+    background-image:url(images/pexels-markus-spiske-1679719.jpg) ;
+}
+#middle{
+    background-color: black;
+    padding: 70px 100px;
+}
+.image1{
+    border: none;
+    border-radius: 5px;
+}
+.textdanger{
+    color: #c0150c;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size:50px;
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@media only screen and (max-width:853px) {
+    .title{
+        margin-top:80px ;
+    }
+    #bar{
+        display: none;
+    }
+    #most{
+        text-align: center;
+    }
+    #menus{
+        padding-top: 20px;
+    }
+}
+#most{
+    text-shadow: 2px 3px 4px rgb(148, 111, 111);
+}
+@media only screen and (max-width:524px) {
+    #menus{
+        padding-bottom: 30px;
+    }
+    #menus{
+        padding-top: 0px;
+    }
+}

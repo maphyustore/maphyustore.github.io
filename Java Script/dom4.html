@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="300px" height="80px">
+        <tr>
+            <td onmouseover="bgchange(this.style.backgroundColor)" onmouseout="bgchange('transparent')"  style="background-color:red;"></td>
+            <td onmouseover="bgchange(this.style.backgroundColor)" onmouseout="bgchange('transparent')" style="background-color:blue;"></td>
+            <td onmouseover="bgchange(this.style.backgroundColor)" onmouseout="bgchange('transparent')" style="background-color:green;"></td>
+        </tr>
+    </table>
+
+    <script>
+        function bgchange(bg){
+            console.log(bg);
+            document.body.style.backgroundColor = bg;
+        }
+    </script>
+</body>
+</html>

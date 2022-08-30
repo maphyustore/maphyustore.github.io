@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function funName(){
+            document.write(`<h1>Hello function!</h1>`)
+        }
+        funName();
+
+        function result(num1,num2){
+            let sum = num1 + num2 
+            return sum;
+        }
+        let sum = result(3,4);
+        document.write(`<h1>Result is : ${sum}</h1>`)
+
+        function add (num1=30,num2=10){
+            let x = num1 - num2
+            return x;
+        }
+        let y = add();
+        document.write(`<h1>Result is : ${y}</h1>`)
+
+        function getsize(length,width,height){
+            let area = length*width
+            let volume = length*width*height
+            size = [area,volume]
+            return size;
+
+        }
+        let area = getsize(2,3,4)[0]
+        let volume = getsize(2,3,4)[1]
+        document.write(`<h1>area is ${area} and volume is ${volume}</h1>`)
+
+
+        let hotel = {
+            name:"XYZ Hotel",
+            rooms:40,
+            booked:25,
+            gym:true,
+            roomTypes:['Twin','Double','Suite'],
+            check: function (){
+                return this.rooms - this.booked;
+
+            }
+        }
+        let hotelName = hotel.name
+        let roomFree = hotel.check();
+        document.write(`<h1>Hotel name is ${hotelName}</h1>`)
+        document.write(`<h1>Rooms free is ${roomFree}</h1>`)
+
+        hotel.pool = false;
+        document.write(`<h1>pool is ${hotel.pool}</h1>`)
+
+        delete hotel.pool;
+        function number(a,b,c,d){
+            let num1 = a+b;
+            let num2 = c+d;
+            let num3 = b-c;
+            let numbers = [num1,num2,num3]
+            return numbers;
+        }
+        let num1 = number(4,5,5,7)[0]
+        let num2 = number(4,5,5,7)[1]
+        let num3 = number(4,5,8,9)[2];
+
+        document.write(`<h3>Num1= ${num1},num2= ${num2},num3= ${num3}</h3>`)
+
+    
+    </script>
+</body>
+</html>
