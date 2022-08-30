@@ -1,0 +1,116 @@
+#nav_bar{
+    background-color: rgb(243, 239, 239);
+    opacity: 0.8;
+}
+#nav_name{
+    color:#940494;
+}
+#nav_button{
+    background-color: #940494;
+    color: white;
+}
+#aTag li a{
+    color: #940494;
+}
+#headerText{
+    color: #940494;
+}
+#button1{
+    border: 1px solid  #940494;
+    color: white;
+    background-color: #940494;
+}
+#button2{
+    border: 1px solid  #940494;
+    color: #940494;
+    background-color: white;
+}
+#button1:hover{
+    border: 1px solid  #940494;
+    color: #940494;
+    background-color: white;
+}
+#button2:hover{
+    border: 1px solid  #940494;
+    color: white;
+    background-color: #940494;
+}
+#button3{
+    border: 1px solid  #940494;
+    color: white;
+    background-color: #940494;
+}
+#button3:hover{
+    border: 1px solid  #940494;
+    color: #940494;
+    background-color: white;
+}
+#home{
+    padding: 160px 60px;
+}
+.divided{
+    background-color: #940494;
+    width: 110px;
+    height: 5px;
+    margin: auto;
+    border-radius: 5px;
+}
+#about{
+    padding: 0px 60px;
+}
+.bar::-webkit-progress-bar-value{
+    background: #940494;
+}
+#iTag a i {
+    color: #940494;
+    font-size: 30px;
+    margin-left: 10px;
+}
+#iTag{
+    margin-left: 30px;
+}
+.code i{
+    font-size: 33px;
+    color: #940494;
+    padding-top: 60px;
+}
+#whatI{
+    padding: 0 80px;
+}
+#image2{
+    padding: 0 100px;
+}
+#container{
+    background-color: #940494;
+}
+#button4{
+    border: 1px solid white;
+    color:white;
+    background-color: #940494;
+}
+#button4:hover{
+    border: 1px solid white;
+    color:#940494;
+    background-color:white;
+}
+.iTag1{
+    font-size: 27px;
+    color: #940494;
+}
+#footer{
+    padding: 0 100px;
+}
+#button5{
+    border: 1px solid  #940494;
+    color: white;
+    background-color: #940494;
+}
+#button5:hover{
+    border: 1px solid  #940494;
+    color: #940494;
+    background-color: white;
+}
+#foot{
+    background-color: #940494;
+    color: white;
+}
