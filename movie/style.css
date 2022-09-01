@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#nav_bar{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+#nav_button{
+    color: rgb(216, 12, 12);
+    border: 1px solid rgb(216, 12, 12);
+}
+.image{
+    width: 100%;
+    position: relative;
+}
+#bgtext{
+    margin-top: 70px;
+    position: absolute;
+    top: 40px;
+    background-color: transparent;
+}
+.pTag{
+    text-align: right;
+}
+.aTag{
+    background-color: white;
+}
+#emailbar{
+    margin-top: 100px;
+    background-color: transparent;
+}
+.title{
+    margin-bottom: 50px;
+    background-color: transparent;
+}
+.textdanger{
+    color: rgb(216, 12, 12);
+}
+#middle{
+    background-color: black;
+    padding: 70px 70px;
+}
+.image1{
+    border: none;
+    border-radius: 5px;
+}
+#drop{
+    background-color: white;
+}
+/* .row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+} */
+.iTag1{
+    font-size: 27px;
+    color: rgb(230, 2, 2);
+}
+#button1{
+    border: 1px solid rgb(230, 2, 2);
+    color: white;
+    background-color: rgb(230, 2, 2);
+    
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  #animate1{
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+#animate1 span{
+
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+#animate1 span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#animate1 span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+#animate1 span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+@media only screen and (max-width:970px){
+    #bgtext{
+        margin-top: 30px;
+        top: 20px;
+    }
+}
+@media only screen and (max-width:828px){
+    .title{
+        margin-bottom: 20px;
+    }
+    #emailbar{
+        margin-top: 50px;
+    }
+    #bgtext{
+        margin-top: 30px;
+        top: 20px;
+    }
+
+}
+@media only screen and (max-width:637px){
+    #emailbar{
+        display: none;
+    }
+    #bgtext{
+        margin-top: 30px;
+        top: 20px;
+    }
+}
+@media only screen and (max-width:460px){
+    #animate1{
+        font-size:20px ;
+    }
+    .pTag{
+        font-size: 10px;
+    }
+    .title{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    #bgtext{
+        margin-top: 30px;
+        top: 20px;
+    }
+    #nav_bar{
+        height: 15px;
+    }
+    .image1{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:315px){
+    #animate1{
+        font-size:10px ;
+    }
+    .pTag{
+        font-size: 7px;
+    }
+    .title{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    #bgtext{
+        margin-top: 30px;
+        top: 20px;
+    }
+}
+@media only screen and (max-width:242px){
+    #animate1{
+        display: none;
+    }
+    .pTag{
+        display: none;
+    }
+}
+#most{
+    animation: moveright 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
