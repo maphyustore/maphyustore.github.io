@@ -7,84 +7,52 @@
     <title>Movie Library</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3185872cf2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="nav_bar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="nav_name">MOVIE</a>
+            <div class="dropdown">
+                <button class="btn px-3 shadow-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav_button"><i class="fa-solid fa-bars"></i></button>
+                <ul class="dropdown-menu dropdown-menu-end" id="aTag">
+                    <li><a class="dropdown-item textdanger" href="#home" id="drop">Home</a></li>
+                    <li><a class="dropdown-item textdanger" href="watch.html" id="drop">Watch</a></li>
+                    <li><a class="dropdown-item textdanger" href="https://maphyustore.github.io/CV/" id="drop">Profile</a></li>
+                    <li><a class="dropdown-item textdanger" href="#comment" id="drop">Comment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div>
-        <img src="images/pexels-markus-spiske-1679719.jpg" alt="" class="image" id="home">
+        <img src="images/pexels-markus-spiske-1679719.jpg" alt="" class="image">
     </div>
-    <div class="navBarContainer position-absolute top-0 end-0 mt-lg-5 pt-lg-5 mt-sm-5 container-fluid">
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="nav_bar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" id="nav_name">MOVIE</a>
-                <div class="dropdown">
-                    <button class="btn px-3 shadow-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav_button"><i class="fa-solid fa-bars"></i></button>
-                    <ul class="dropdown-menu dropdown-menu-end" id="aTag">
-                        <li><a class="dropdown-item textdanger" href="#home">Home</a></li>
-                        <li><a class="dropdown-item textdanger" href="watch.html">Watch</a></li>
-                        <li><a class="dropdown-item textdanger" href="https://maphyustore.github.io/CV/">Profile</a></li>
-                        <li><a class="dropdown-item textdanger" href="#comment">Comment</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid  text-white text-center" id="animate2">
-            <h1 class="title">
-                <span class="title-word title-word-1">Enjoy</span>
-                <span class="title-word title-word-2">Your</span>
-                <span class="title-word title-word-3">Day</span>
+    <div class="container-fluid  text-white text-center" id="bgtext">
+        <h1 class="title" >
+            <span class="title-word title-word-1"  style="background-color:transparent;">Enjoy</span>
+            <span class="title-word title-word-2"  style="background-color:transparent;">Your</span>
+            <span class="title-word title-word-3"  style="background-color:transparent;">Day</span>
+        </h1>
+        <div class=" text-white "  style="background-color:transparent;">
+            <h1 class="text-center" id="animate1" style="color: #c0150c;">
+                <span><i  style="background-color:transparent;">Watch</i></span>
+                <span><i style="background-color:transparent;">anytime,</i></span>
+                <span><i style="background-color:transparent;">anywhere!</i></span>
             </h1>
-            <div class=" text-white" id="menus">
-                <h1 class="text-center" id="animate1" style="color: #c0150c;">
-                    <span><i>Watch</i></span>
-                    <span><i>anytime,</i></span>
-                    <span><i>anywhere!</i></span>
-                </h1>
-                <p class="container"  style="color: #c0150c;" id="most">The most convenient movie library in <i>Myanmar.</i></p>
-            </div>
-            <div class="text-white" id="bar">
-                <p class="text-center">Ready to watch? Enter your email to create or restart your membership.</p>
-                <div class="input-group">
-                    <input type="text" class="form-control shadow-sm border-0 mb-3" placeholder="Enter your email">
-                    <button class="btn btn-danger mb-3" type="button">Get Started</button>
-                </div>
+            <p class="container pTag"  style="color: #c0150c;" id="most"  style="background-color:transparent;">The most convenient movie library in <i  style="background-color:transparent;">Myanmar.</i></p>
+        </div>
+        <div class="text-white container-fluid" id="emailbar">
+            <p class="text-center textdanger"  style="background-color:transparent;">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input-group"  style="background-color:transparent;">
+                <input type="text" class="form-control shadow-sm border-0 mb-3" placeholder="Enter your email">
+                <button class="btn btn-danger mb-3" type="button">Get Started</button>
             </div>
         </div>
-            
-           
     </div>
-    
-    
-    <!-- <div id="demo" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/marvel.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-            </div>
-            <div class="carousel-item">
-              <img src="images/FZwtCJrVsAEis8k.jpeg" alt="Chicago" class="d-block" style="width:100%">
-            </div>
-            <div class="carousel-item">
-              <img src="images/Money.jpg" alt="New York" class="d-block" style="width:100%">
-            </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        </button>
-    </div><br> -->
 
     <div class="row" id="middle">
         <div class="col-lg-7 text-white">
@@ -92,12 +60,11 @@
             <h3  class="textdanger">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
             </h3>
         </div>
-        <div class="col-lg-3">  
+        <div class="col-lg-5">  
             <img src="images/tv.jpg" alt="" class="image1 ">
         </div>
     </div>
 
-    
     <div class="row" id="middle">
         <div class="col-lg-5">  
             <img src="images/tv1.jpg" alt="" class="image1 ">
@@ -114,7 +81,7 @@
             <h1 class="mb-4">Download your shows to watch offline.</h1>
             <h3  class="textdanger">Save your favorites easily and always have something to watch.</h3>
         </div>
-        <div class="col-lg-3">  
+        <div class="col-lg-5">  
             <img src="images/tv2.jpg" alt="" class="image1 ">
         </div>
     </div>
@@ -131,7 +98,7 @@
 
 
     <div class="row" id="comment">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-5">
             <div class="d-flex">
                 <div class="iTag1"><i class="fa-solid fa-envelope"></i></div>
                 <div class="ms-3">
@@ -154,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <input type="text" class="form-control shadow-sm fs-6 border-0 form-control-lg" placeholder="Enter your name">
