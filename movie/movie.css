@@ -3,9 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
 } */
-/* *{
-    background-color: black;
-} */
 #menu{
     position: absolute;
     top: 60px;
@@ -98,11 +95,6 @@
 .image{
     width: 100%;
 }
-.navBarContainer{
-    position: absolute;
-    top: 10px;
-    width: 100%;
-}
 #aTag:hover{
     text-decoration: underline;
 
@@ -139,55 +131,7 @@
     background-color: rgb(230, 2, 2);
     
 }
-#comment{
-    padding: 50px 100px;
-    background-color: black;
-}
-#animate1{
-    max-width: 40ch;
-    text-align: center;
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-    text-shadow: 2px 3px 4px rgb(177, 147, 147);
-}
-@keyframes scale {
-    100% {
-      transform: scale(1);
-    }
-}
-#animate1 span{
 
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-}
-#animate1 span:nth-child(1) {
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-#animate1 span:nth-child(2) {
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-  
-#animate1 span:nth-child(3) {
-    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-@keyframes fade-in {
-    100% {
-      opacity: 1;
-      filter: blur(0);
-    }
-}
-.mainContainer{
-    background-image:url(images/pexels-markus-spiske-1679719.jpg) ;
-}
-#middle{
-    background-color: black;
-    padding: 70px 100px;
-}
-.image1{
-    border: none;
-    border-radius: 5px;
-}
 .textdanger{
     color: #c0150c;
 }
@@ -220,28 +164,40 @@
     background-position: 200% center;
   }
 }
-@media only screen and (max-width:853px) {
-    .title{
-        margin-top:80px ;
-    }
-    #bar{
-        display: none;
-    }
-    #most{
-        text-align: center;
-    }
-    #menus{
-        padding-top: 20px;
-    }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-#most{
-    text-shadow: 2px 3px 4px rgb(148, 111, 111);
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
-@media only screen and (max-width:524px) {
-    #menus{
-        padding-bottom: 30px;
-    }
-    #menus{
-        padding-top: 0px;
-    }
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#allcontainer{
+    transition:margin-left .5s;
+    padding: 16px;
 }

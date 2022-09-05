@@ -14,7 +14,15 @@
     <script src="https://kit.fontawesome.com/3185872cf2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="nav_bar">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:30px;cursor:pointer">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="allcontainer">
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="nav_bar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" id="nav_name">MOVIE</a>
             <div class="dropdown">
@@ -27,7 +35,8 @@
                 </ul>
             </div>
         </div>
-    </nav><br><br><br><br>
+    </nav><br><br><br><br> -->
+    <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Go To Library</div>
 
     <div class="container">
         <div class="row">
@@ -77,7 +86,7 @@
 
     <div class="row" align="center">
         <div class="col">
-            <div class="card" style="width:400px">
+            <div class="card" style="width:350px">
                 <img class="card-img-top" src="images/drstrange.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                 <h4 class="card-title textdanger">Dr.strange</h4>
@@ -87,7 +96,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card" style="width:400px">
+            <div class="card" style="width:350px">
                 <img class="card-img-top" src="images/captain marvel.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                 <h4 class="card-title textdanger">Captain Marvel</h4>
@@ -97,7 +106,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card" style="width:400px">
+            <div class="card" style="width:350px">
                 <img class="card-img-top" src="images/end game.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                 <h4 class="card-title textdanger">Avengers:End game</h4>
@@ -110,7 +119,7 @@
 
     <div class="row" align="center">
         <div class="col">
-            <div class="card" style="width:400px">
+            <div class="card" style="width:350px">
                 <img class="card-img-top" src="images/spider_man_homecoming_rating.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title textdanger">Spider-man:Home coming</h4>
@@ -120,7 +129,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card" style="width:400px">
+            <div class="card" style="width:350px">
                 <img class="card-img-top" src="images/Big-mouth-poster-071322-1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title textdanger">Big Mouth</h4>
@@ -130,21 +139,34 @@
             </div>
         </div>
         <div class="col">
-            <div class="card" style="width:400px">
+            <div class="card" style="width:350px">
                 <img class="card-img-top" src="images/money heist.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title textdanger">Money Heist: Korea</h4>
-                  <p class="card-text pt-4 pb-4">Money Heist: Korea  Joint Economic Area (Korean: 종이의 집: 공동경제구역) is a South Korean television series and second series in the Money Heist franchise, based on the original Spanish series. </p>
+                  <p class="card-text pt-5 pb-4">Money Heist: Korea  Joint Economic Area (Korean: 종이의 집: 공동경제구역) is a South Korean television series and second series in the Money Heist franchise, based on the original Spanish series. </p>
                   <a href="https://t.me/money_mmsub/6" class="btn btn-danger">Watch</a>
                 </div>
             </div>
         </div>
     </div>
-    </div><br><br><br>
+    <br><br><br>
     <div class=" text-white pt-3 pb-3" id="footer">
         <p class="textdanger text-center">The content here is copied from elsewhere.Credit to all original uploaders.</p>
         <h3 style="font-size: 15px;" align="center">maphyustore.github.io &copy; All right reserved.</h3>
         <h5 align="center">By Kaung &hearts;</h5>
     </div>
+
+  </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "150px";
+        document.getElementById("allcontainer").style.marginLeft = "150px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("allcontainer").style.marginLeft= "0";
+      }
+    </script>
 </body>
 </html>
