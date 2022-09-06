@@ -17,26 +17,36 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:30px;cursor:pointer">&times;</a>
     <a href="index.html">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <button class="dropdown-btn">K-Drama 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#bigmouth">Big Mouth</a>
+      <a href="#thesound">The Sound of your heart</a>
+      <a href="#moneyh">Money Heist:Korea</a>
+    </div>
+    <button class="dropdown-btn">Comedy 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#threes">Three Stooges</a>
+      <a href="#grownup1">Growns Up1</a>
+      <a href="#grownup2">Growns Up2</a>
+    </div>
+    <button class="dropdown-btn">Running-man 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    
+    <a href="#marvel">MCU Collection</a>
+    <a href="#">Comming soon!</a>
   </div>
   <div id="allcontainer">
-    <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="nav_bar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" id="nav_name">MOVIE</a>
-            <div class="dropdown">
-                <button class="btn px-3 shadow-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav_button"><i class="fa-solid fa-bars"></i></button>
-                <ul class="dropdown-menu dropdown-menu-end" id="aTag">
-                    <li><a class="dropdown-item textdanger" href="index.html">Home</a></li>
-                    <li><a class="dropdown-item textdanger" href="watch.html">Watch</a></li>
-                    <li><a class="dropdown-item textdanger" href="https://maphyustore.github.io/CV/">Profile</a></li>
-                    <li><a class="dropdown-item textdanger" href="index.html">Comment</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav><br><br><br><br> -->
-    <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Go To Library</div>
+    <div style="font-size:30px;cursor:pointer;" onclick="openNav()" id="content">&#9776; Go To Library</div>
 
     <div class="container">
         <div class="row">
@@ -85,72 +95,131 @@
       </div><br><br>
 
     <div class="row" align="center">
+      <div class="col">
+        <div class="card" style="width:350px">
+            <img class="card-img-top" src="images/Big-mouth-poster-071322-1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title textdanger">Big Mouth</h4>
+              <p class="card-text">Big Mouth (Korean: 빅마우스; RR: Bingmauseu) is an ongoing South Korean television series starring Lee Jong-suk, Im Yoon-ah and Kim Joo-hun. It premiered on MBC TV on July 29, 2022, and airs every Friday and Saturday at 21:50 (KST). It is also available for streaming on Disney+ in selected regions.</p>
+              <a href="#bigmouth" class="btn btn-danger">Watch</a>
+            </div>
+        </div>
+      </div>
         <div class="col">
             <div class="card" style="width:350px">
-                <img class="card-img-top" src="images/drstrange.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="images/tsoyh.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                <h4 class="card-title textdanger">Dr.strange</h4>
-                <p class="card-text">Doctor Strange in the Multiverse of Madness is a 2022 American superhero film based on Marvel Comics featuring the character Doctor Strange. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to Doctor Strange (2016) and the 28th film in the Marvel Cinematic Universe (MCU). </p>
-                <a href="https://t.me/mmsubstitutemovie/106" class="btn btn-danger">Watch</a>
+                <h4 class="card-title textdanger">The Sound Of Your Heart</h4>
+                <p class="card-text pb-4 pt-5">The Sound Of Your Heart (Korean: 마음의 소리; RR: Maeumui Sori) is a South Korean television series starring Lee Kwang-soo and Jung So-min. The sitcom is based on the webtoon of the same name.</p>
+                <a href="#thesound" class="btn btn-danger">Watch</a>
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col" id="grownup1">
             <div class="card" style="width:350px">
-                <img class="card-img-top" src="images/captain marvel.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="images/grownup1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                <h4 class="card-title textdanger">Captain Marvel</h4>
-                <p class="card-text pb-4">Captain Marvel is a 2019 American superhero film based on Marvel Comics featuring the character Carol Danvers / Captain Marvel. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 21st film in the Marvel Cinematic Universe (MCU).</p>
-                <a href="https://t.me/mmsubstitutemovie/120" class="btn btn-danger">Watch</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width:350px">
-                <img class="card-img-top" src="images/end game.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                <h4 class="card-title textdanger">Avengers:End game</h4>
-                <p class="card-text">Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU).</p>
-                <a href="https://t.me/mmsubstitutemovie/122" class="btn btn-danger">Watch</a>
+                <h4 class="card-title textdanger">Grown Ups1</h4>
+                <p class="card-text pt-2 pb-3">Grown Ups is a 2010 American comedy film directed by Dennis Dugan, written by Adam Sandler and Fred Wolf, and is produced by Jack Giarraputo and Sandler who stars in the film along with Kevin James, Chris Rock, David Spade, Rob Schneider, Salma Hayek, Maria Bello, and Maya Rudolph.</p>
+                <a href="https://t.me/c/1351568725/25" class="btn btn-danger">Watch</a>
                 </div>
             </div>
         </div>
     </div><br><br>
 
     <div class="row" align="center">
-        <div class="col">
+        <div class="col" id="grownup2">
             <div class="card" style="width:350px">
-                <img class="card-img-top" src="images/spider_man_homecoming_rating.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="images/grownup2.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title textdanger">Spider-man:Home coming</h4>
-                  <p class="card-text">Spider-Man: Homecoming is a 2017 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios, and distributed by Sony Pictures Releasing. It is the second Spider-Man film reboot and the 16th film in the Marvel Cinematic Universe (MCU).</p>
-                  <a href="https://t.me/mmsubstitutemovie/114" class="btn btn-danger">Watch</a>
+                  <h4 class="card-title textdanger">Grown Up2</h4>
+                  <p class="card-text pt-2 pb-3">Grown Ups is a 2010 American comedy film directed by Dennis Dugan, written by Adam Sandler and Fred Wolf, and is produced by Jack Giarraputo and Sandler who stars in the film along with Kevin James, Chris Rock, David Spade, Rob Schneider, Salma Hayek, Maria Bello, and Maya Rudolph.</p>
+                  <a href="https://t.me/c/1351568725/26" class="btn btn-danger">Watch</a>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card" style="width:350px">
-                <img class="card-img-top" src="images/Big-mouth-poster-071322-1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title textdanger">Big Mouth</h4>
-                  <p class="card-text">Big Mouth (Korean: 빅마우스; RR: Bingmauseu) is an ongoing South Korean television series starring Lee Jong-suk, Im Yoon-ah and Kim Joo-hun. It premiered on MBC TV on July 29, 2022, and airs every Friday and Saturday at 21:50 (KST). It is also available for streaming on Disney+ in selected regions.</p>
-                  <a href="https://t.me/bigmouth2022MMsub/21" class="btn btn-danger">Watch</a>
-                </div>
-            </div>
+          <div class="card" style="width:350px">
+              <img class="card-img-top" src="images/end game.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+              <h4 class="card-title textdanger">Marvel</h4>
+              <p class="card-text pt-2 pb-3">The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics.  </p>
+              <a href="#marvel" class="btn btn-danger">Watch</a>
+              </div>
+          </div>
         </div>
+        
         <div class="col">
             <div class="card" style="width:350px">
                 <img class="card-img-top" src="images/money heist.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title textdanger">Money Heist: Korea</h4>
                   <p class="card-text pt-5 pb-4">Money Heist: Korea  Joint Economic Area (Korean: 종이의 집: 공동경제구역) is a South Korean television series and second series in the Money Heist franchise, based on the original Spanish series. </p>
-                  <a href="https://t.me/money_mmsub/6" class="btn btn-danger">Watch</a>
+                  <a href="#moneyh" class="btn btn-danger">Watch</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br>
+    <div class="container-fluid textdanger" id="bigmouth"><h1>Big Mouth</h1></div>
+    <div class="list-group container-fluid">
+        <a href="https://t.me/c/1351568725/13" class="list-group-item list-group-item-action textdanger">Big Mouth Ep1</a>
+        <a href="https://t.me/c/1351568725/14" class="list-group-item list-group-item-action textdanger">Big Mouth Ep2</a>
+        <a href="https://t.me/c/1351568725/15" class="list-group-item list-group-item-action textdanger">Big Mouth Ep3</a>
+        <a href="https://t.me/c/1351568725/16" class="list-group-item list-group-item-action textdanger">Big Mouth Ep4</a>
+        <a href="https://t.me/c/1351568725/17" class="list-group-item list-group-item-action textdanger">Big Mouth Ep5</a>
+        <a href="https://t.me/c/1351568725/18" class="list-group-item list-group-item-action textdanger">Big Mouth Ep6</a>
+        <a href="https://t.me/c/1351568725/19" class="list-group-item list-group-item-action textdanger">Big Mouth Ep7</a>
+        <a href="https://t.me/c/1351568725/20" class="list-group-item list-group-item-action textdanger">Big Mouth Ep8</a>
+        <a href="https://t.me/c/1351568725/21" class="list-group-item list-group-item-action textdanger">Big Mouth Ep9</a>
+        <a href="https://t.me/c/1351568725/22" class="list-group-item list-group-item-action textdanger">Big Mouth Ep10</a>
+        <a href="https://t.me/c/1351568725/23" class="list-group-item list-group-item-action textdanger">Big Mouth Ep11</a>
+        <a href="https://t.me/c/1351568725/24" class="list-group-item list-group-item-action textdanger">Big Mouth Ep12</a>
+        <a href="" class="list-group-item list-group-item-action textdanger">Big Mouth Ep13 Comming soon!</a>
+    </div><br>
+    <div class="container-fluid textdanger" id="thesound"><h1>The Sound of your heart</h1></div>
+    <div class="list-group container-fluid">
+        <a href="https://t.me/c/1351568725/2" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep1</a>
+        <a href="https://t.me/c/1351568725/3" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep2</a>
+        <a href="https://t.me/c/1351568725/4" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep3</a>
+        <a href="https://t.me/c/1351568725/5" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep4</a>
+        <a href="https://t.me/c/1351568725/6" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep5</a>
+        <a href="https://t.me/c/1351568725/7" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep6</a>
+        <a href="https://t.me/c/1351568725/9" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep7</a>
+        <a href="https://t.me/c/1351568725/10" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep8</a>
+        <a href="https://t.me/c/1351568725/11" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep9</a>
+        <a href="https://t.me/c/1351568725/12" class="list-group-item list-group-item-action textdanger">The Sound of your heart Ep10</a>
+    </div><br>
+    <div class="container-fluid textdanger" id="moneyh"><h1>Money Heist:Korea</h1></div>
+    <div class="list-group container-fluid">
+        <a href="https://t.me/c/1351568725/28" class="list-group-item list-group-item-action textdanger">Money Heist:Korea Ep1</a>
+        <a href="" class="list-group-item list-group-item-action textdanger">Money Heist:Korea Ep2</a>
+        <a href="" class="list-group-item list-group-item-action textdanger">Money Heist:Korea Ep3</a>
+        <a href="" class="list-group-item list-group-item-action textdanger">Money Heist:Korea Ep4</a>
+        <a href="" class="list-group-item list-group-item-action textdanger">Money Heist:Korea Ep5</a>
+        <a href="" class="list-group-item list-group-item-action textdanger">Money Heist:Korea Ep6</a>
+        <a href="" class="list-group-item list-group-item-action textdanger">Money Heist:Korea Ep7 Comming soon!</a>
+    </div><br>
+
+    <div class="container-fluid textdanger" id="marvel"><h1>Marvel Cinematic Universe(MCU)</h1></div>
+    <div class="list-group container-fluid">
+        <a href="#" class="list-group-item list-group-item-action textdanger">Iron Man 1</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Iron Man 2</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Iron Man 3</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Captain America:The First Avenger</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Thor 2011</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">The Avengers 2011</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Thor The Dark World</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Captain America:The winter soldier</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Gurdian of the Galaxy:Volume1</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Thor Ragnarok</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Ant Man and the Wasp</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Avengers Infinity War</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Captain Marvel</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Avengers End Game</a>
+        <a href="#" class="list-group-item list-group-item-action textdanger">Black Widow</a>
+    </div><br>
     <br><br><br>
-    <div class=" text-white pt-3 pb-3" id="footer">
+    <div class=" text-white pt-3 pb-3 container-fluid" id="footer">
         <p class="textdanger text-center">The content here is copied from elsewhere.Credit to all original uploaders.</p>
         <h3 style="font-size: 15px;" align="center">maphyustore.github.io &copy; All right reserved.</h3>
         <h5 align="center">By Kaung &hearts;</h5>
@@ -166,6 +235,19 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("allcontainer").style.marginLeft= "0";
+      }
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
       }
     </script>
 </body>
